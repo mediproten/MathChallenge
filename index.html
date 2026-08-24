@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MathChallenge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-overlay">
+      <div class="game-box">
+        <b>
+          <code id="first-char"></code>
+          <code id="amaliat-name"></code>
+          <code id="last-char"></code>
+          <code id="mosavi">=</code>
+          <code id="pasokh"></code>
+        </b>
+      </div>
+      <div class="game-contorol">
+        <div class="calculator-contoroler">
+          <button class="btn operator Exit-btn" data-action="Exit">Exit</button>
+
+          <button class="btn step-btn">
+            <div class="step-box">
+              <b>step</b>
+              <code id="stepText">1</code>
+            </div>
+          </button>
+          <button
+            id="okay-btn"
+            title="Double Click To Copy"
+            class="btn number"
+            data-action="tik"
+          >
+            OK
+          </button>
+        </div>
+        <div class="calculator">
+          <!--
+        <button class="btn function" data-action="clear">AC</button> -->
+
+          <!-- Row 2 -->
+
+          <button class="btn number" data-value="7">7</button>
+          <button class="btn number" data-value="8">8</button>
+
+          <button class="btn number" data-value="9">9</button>
+
+          <!-- Row 3 -->
+          <button class="btn number" data-value="4">4</button>
+          <button class="btn number" data-value="5">5</button>
+          <button class="btn number" data-value="6">6</button>
+
+          <!-- Row 4 -->
+
+          <button class="btn number" data-value="1">1</button>
+          <button class="btn number" data-value="2">2</button>
+
+          <button class="btn number" data-value="3">3</button>
+
+          <!-- Row 5 -->
+
+          <button class="btn clear-btn" data-action="clear">AC</button>
+          <button
+            id="zero-btn"
+            title="Double Click To Copy"
+            class="btn number zero"
+            data-value="0"
+          >
+            0
+          </button>
+
+          <button class="btn back-btn" data-action="back">Back</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="record-div">
+        <button id="volume-btn"><i class="fa fas fa-volume-up"></i></button>
+        <span id="Record-text">Record : </span>
+      </div>
+      <div class="container">
+        <p id="random-question">2 * 2 = 4</p>
+        <button id="START-btn" type="button">START</button>
+      </div>
+    </main>
+
+    <!-- ---------- audio section  -->
+    <audio id="error-audio" src="assests/audio/Error.wav"></audio>
+    <audio id="ok-audio" src="assests/audio/Ok.wav"></audio>
+    <!-- ---------------- -->
+
+
+
+   <!-- Loading Screen -->
+<div class="loading-screen" id="loading-screen">
+
+  <div class="math-loader">
+
+    <div class="math-symbol symbol-1">+</div>
+    <div class="math-symbol symbol-2">×</div>
+    <div class="math-symbol symbol-3">÷</div>
+    <div class="math-symbol symbol-4">−</div>
+
+    <div class="loader-circle">
+      <div class="loader-number">7</div>
+    </div>
+
+  </div>
+
+  <h2 class="loading-title">MathRush</h2>
+
+  <p class="loading-text">
+    Preparing your challenge...
+  </p>
+
+  <div class="loading-bar">
+    <div class="loading-progress"></div>
+  </div>
+
+</div>
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
