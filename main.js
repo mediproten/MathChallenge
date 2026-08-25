@@ -57,6 +57,7 @@ if (isVolumeUp) {
 // -----------
 
 startBtn.addEventListener("click", () => {
+  stepText.textContent = "1"   // fix UX error
   generateQuestion();
   gameOverlay.classList.add("show");
 });
